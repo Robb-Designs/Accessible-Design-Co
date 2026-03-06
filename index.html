@@ -8,10 +8,12 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header role="banner">
         <nav role="navigation" aria-label="Main Navigation">
             <div class="logo">
-                <h1>Accessily</h1>
+                <p>Accessily</p>
             </div>
 
             <ul class="nav-links">
@@ -30,12 +32,12 @@
             <div class="container">
                 <div class="hero-left">
                     <h1>Beautiful design that everyone can access</h1>
-                    <p id="hero-description"> Accessily helps businesses create inclusive websites that work for
+                    <p id="hero-desc"> Accessily helps businesses create inclusive websites that work for
                         everyone,
                         including users who rely on assistive technologies.</p>
                     <form class="hero-form" aria-describedby="hero-desc">
-                        <label for="email" class="label-hidden">Email</label>
-                        <input type="email" name="email" placeholder="Enter your email" autocomplete="email">
+                        <label for="hero-email" class="label-hidden">Email</label>
+                        <input type="email" id="hero-email" name="hero-email" placeholder="Enter your email" autocomplete="email">
 
                         <button class="btn" id="hero-btn">Get Started</button>
                     </form>
@@ -77,7 +79,7 @@
                         delivering great user experiences.</p>
                 </div>
 
-                <div class="grid-container">
+                <div class="services-grid">
                     <article class="grid-item">Item 1</article>
                     <article class="grid-item">Item 2</article>
                     <article class="grid-item">Item 3</article>
@@ -90,11 +92,86 @@
             </div>
         </section>
 
-        <section class="contact-sect"></section>
+        <section class="contact-sect">
+            <div class="container">
+                <h2>Get in Touch with Our Team</h2>
+                <p>We're here to help you build more accessible digital experiences. Tell us about your project and how
+                    we can help. </p>
+                <div class="form-left">
+                    <h4>Lets Talk About Your Project</h4>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="contact-name" placeholder="Full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Enter Company name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="name" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <p id="message-help">
+                                Tell us a little about your project or accessibility needs.
+                            </p>
+
+                            <label for="comments">Tell us your story:</label>
+                            <textarea id="comments" name="comments" placeholder="Tell us about your project" aria-describedby="message-help"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <h3>Accessily</h3>
+                <p>
+                    Designing accessible digital experiences for everyone.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: contact@accessily.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Accessily. All rights reserved.</p>
+        </div>
+
+    </div>
+
+</footer>
 </body>
 
 </html>
