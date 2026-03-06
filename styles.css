@@ -24,10 +24,10 @@
     /* TYPOGRAPHY */
     --font-primary: "Source Sans 3", sans-serif;
 
-    --font-h1: 48px;
-    --font-h2: 36px;
+    --font-h1: 64px;
+    --font-h2: 48px;
     --font-h3: 28px;
-    --font-body: 18px;
+    --font-body: 24px;
     --font-small: 14px;
 
     --font-weight-heading: 600;
@@ -38,7 +38,7 @@
 
     /* SPACING */
     --space-xs: 12px;
-    --space-sm: 24px;
+    --space-sm: 16px;
     --space-md: 36px;
     --space-lg: 48px;
     --space-xl: 72px;
@@ -55,9 +55,16 @@ body {
     background-color: var(--color-bg);
 }
 
+.container{
+    /* border: 2px dashed white; */
+    height: 100vh;
+    
+}
+
 h1 {
     font-size: var(--font-h1);
     font-weight: var(--font-weight-heading);
+    line-height: 1.5;
 }
 
 h2 {
@@ -78,7 +85,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px dashed black;
     padding: var(--space-xs) var(--space-lg);
     background-color: var(--color-neutral);
     color: white;
@@ -86,15 +92,15 @@ nav {
 
 .logo{
     border: 2px dashed white;
-    
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.5rem; 
 }
 .nav-links {
     display: flex;
-    gap: var(--space-sm);
+    gap: var(--space-lg);
     list-style: none;
-
-   
-
 }
 
 .nav-links a {
@@ -115,5 +121,65 @@ button {
     background-color: var(--color-accent);
     color: white;
     border: none;
+    border-radius: 14px;
     cursor: pointer;
+}
+
+/* HERO */
+
+#hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    gap: 1rem; 
+}
+
+.hero-form{
+    display: flex;
+    gap: 1rem; 
+    
+}
+
+.hero-left{
+    padding: var(--space-sm) var(--space-lg);
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+}
+
+.hero-left h1{
+    max-width: 15ch;
+}
+
+.hero-left p{
+    max-width: 50ch;
+    font-size: var(--font-body);
+  
+}
+
+.hero-button{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-form input{
+    background-color: #eee;
+    font-family: inherit;
+    flex: .9;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
 }
