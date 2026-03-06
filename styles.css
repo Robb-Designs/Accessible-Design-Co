@@ -1,0 +1,45 @@
+/* GLOBAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    :root {
+
+  /* COLORS */
+  --color-bg: #ede0d4;
+  --color-text: #414833;
+  --color-section: #656d4a;
+  --color-accent: #7f5539;
+  --color-link: #3b82f6;
+  --color-card: #ffffff;
+  --color-neutral: #a68a64;
+  --color-focus: #ffd166;
+
+  /* TYPOGRAPHY */
+  --font-primary: "Source Sans 3", sans-serif;
+
+  --font-h1: 48px;
+  --font-h2: 36px;
+  --font-h3: 28px;
+  --font-body: 18px;
+  --font-small: 14px;
+
+  --font-weight-heading: 600;
+  --font-weight-body: 400;
+  --font-weight-button: 500;
+
+  --line-height: 1.5;
+
+  /* SPACING */
+  --space-xs: 12px;
+  --space-sm: 24px;
+  --space-md: 36px;
+  --space-lg: 48px;
+  --space-xl: 72px;
+  --space-xxl: 96px;
+
+}
+}
