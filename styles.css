@@ -91,11 +91,12 @@ nav {
 }
 
 .logo{
-    border: 2px dashed white;
+    /* border: 2px dashed white; */
+    font-weight: var(--font-weight-heading);
     display: flex;
     align-items: center;
     margin: 0;
-    font-size: 1.5rem; 
+    font-size: 1.7rem; 
 }
 .nav-links {
     display: flex;
@@ -106,11 +107,13 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    transition: .2s;
+    transition: .2s ease;
 }
 
 .nav-links a:hover {
-    color: var(--color-link);
+    color: var(--color-text);
+    font-weight: var(--font-weight-heading);
+    font-size: 1.6rem;
 }
 
 
@@ -131,7 +134,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 80vh;
     gap: 1rem; 
 }
 
@@ -151,7 +154,8 @@ button {
 }
 
 .hero-left h1{
-    max-width: 15ch;
+    /* max-width: 15ch; for media query larger screens */
+    max-width: 19ch;
 }
 
 .hero-left p{
@@ -166,12 +170,12 @@ button {
     border-radius: 1rem;
     font-family: inherit;
     font-size: 1rem;
+    transition: 0.2s;
 }
 
-.hero-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero-button:hover{
+    background-color: var(--color-focus);
+    color: var(--color-text);
 }
 
 .hero-form input{
@@ -182,4 +186,14 @@ button {
     border-radius: 1rem;
     font-size: 1rem;
     padding: 1rem;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    width: 100%;
 }
