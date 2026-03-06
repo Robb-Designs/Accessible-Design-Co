@@ -73,29 +73,38 @@ p {
     font-size: var(--font-small);
 }
 
- /* NAVBAR */
-nav{
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 2px dashed black;
-    height: 4.5rem;
-    padding: 0 2rem;
+    padding: var(--space-xs) var(--space-lg);
     background-color: var(--color-neutral);
     color: white;
 }
-    
 
-.nav-links{
-    display: flex;
-    gap: 1em;
-    list-style: none;
+.logo{
+    border: 2px dashed white;
     
 }
+.nav-links {
+    display: flex;
+    gap: var(--space-sm);
+    list-style: none;
 
-.nav-links a{
+   
+
+}
+
+.nav-links a {
     text-decoration: none;
     color: white;
+    transition: .2s;
+}
+
+.nav-links a:hover {
+    color: var(--color-link);
 }
 
 
